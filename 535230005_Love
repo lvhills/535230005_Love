@@ -1,60 +1,218 @@
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Love Hillary Swigo -CV</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-<head>
-    <title> Love Hillary Swigo -CV</title>
-</head>
+            body {
+                font-family: 'Arial', sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                padding: 20px;
+            }
 
-<body>
-    <div class="container">
-        <div class="left-column">
-            <img src="profile.jpg" alt="Love Hillary Swigo">
-            <div class="name-title">Love Hillary Swigo</div>
-            <div class="subtitle">Undergraduate Informatics Engineering Student at Tarumanagara University</div>
+            .container {
+                width: 21cm;
+                height: 29.7cm;
+                margin: 0 auto;
+                background-color: #fff;
+                padding: 30px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                gap: 40px;
+            }
+            
+            @media print {
+                body {
+                    width: 21cm;
+                    height: 29.7cm;
+                    padding: 0;
+                    margin: 0;
+                    -webkit-print-color-adjust: exact;
+                }
 
-            <div class="education">
-                <div class="section-title">Education</div>
-                <p>Tarumanagara University<br>Informatics Engineer • August 2023 - Present</p>
+                .container {
+                    box-shadow: none;
+                    page-break-inside: avoid;
+                    page-break-after: always;
+                }
+            }
+
+            .left-column {
+                background-color: #f9f5f1;
+                padding: 20px;
+                border-radius: 5px;
+                text-align: left;
+            }
+
+            .left-column img {
+                border-radius: 50%;
+                width: 120px;
+                display: block;
+                margin: 0 auto 20px;
+            }
+
+            .name-title {
+                font-size: 36px;
+                font-weight: bold;
+                color: #854A20;
+                margin-bottom: 5px;
+                text-align: center;
+            }
+
+            .subtitle {
+                font-size: 18px;
+                color: #854A20;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .section-title {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                color: #854A20;
+                border-bottom: 2px solid #854A20;
+                padding-bottom: 5px;
+                margin-top: 20px;
+            }
+
+            .left-column p, .right-column p {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            .right-column {
+                padding-left: 20px;
+            }
+
+            .about-me {
+                font-size: 14px;
+                line-height: 1.8;
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+
+            .education, .skills, .work-history {
+                margin-bottom: 20px;
+            }
+
+            ul {
+                list-style: none;
+            }
+
+            ul li {
+                margin-bottom: 10px;
+                font-size: 14px;
+            }
+
+            .contact {
+                margin-top: 20px;
+            }
+
+            .contact p {
+                margin-bottom: 5px;
+                font-size: 14px;
+            }
+
+            .contact i {
+                margin-right: 10px;
+            }
+
+            .contact-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 5px;
+            }
+
+            .list-item {
+                position: relative;
+                padding-left: 15px;
+            }
+
+            .list-item::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: #854A20;
+                font-size: 18px;
+                line-height: 1;
+            }
+
+            .right-column .work-history p {
+                font-size: 14px;
+                line-height: 1.8;
+            }
+
+            .contact-section {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="left-column">
+                <img src="pp.jpg" alt="Love Hillary Swigo">
+                <div class="name-title">Love Hillary Swigo</div>
+                <div class="subtitle">Undergraduate Informatics Engineering Student</div>
+
+                <div class="education">
+                    <div class="section-title">Education</div>
+                    <p>UNKLAB High School<br>Science Major <br>• 2020 - 2023</p>
+                    <p>Tarumanagara University<br>Informatics Engineer <br>• August 2023 - Present</p>
+                </div>
+
+                <div class="skills">
+                    <div class="section-title">Skills</div>
+                    <ul>
+                        <li class="list-item">Microsoft Office (Word, Powerpoint, Excel)</li>
+                        <li class="list-item">Editing (Canva, Capcut, PicsArt)</li>
+                        <li class="list-item">Time-Management</li>
+                        <li class="list-item">Communication</li>
+                        <li class="list-item">Flexibility</li>
+                        <li class="list-item">Team-Work</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="skills">
-                <div class="section-title">Skills</div>
-                <ul>
-                    <li class="list-item">Microsoft Office (Word, Powerpoint, Excel)</li>
-                    <li class="list-item">Editing (Canva, Capcut, PicsArt)</li>
-                    <li class="list-item">Time-Management</li>
-                    <li class="list-item">Communication</li>
-                    <li class="list-item">Flexibility</li>
-                    <li class="list-item">Team-Work</li>
-                </ul>
+            <div class="right-column">
+                <div class="about-me">
+                    <div class="section-title">About Me</div>
+                    <p>I am an undergraduate Informatics Engineering student at Tarumanagara University. I enjoy collaborating with people, building relationships, and sharing ideas. Balancing personal time, academics, and work is a source of pride for me.</p>
+                </div>
+
+                <div class="work-history">
+                    <div class="section-title">Organizational Experience</div>
+                    <p><strong>Community Service Member</strong><br>BEM FTI Tarumanagara University<br>November 2023 - July 2024</p>
+                    <p><strong>Head of Community Service Department</strong><br>BEM FTI Tarumanagara University<br>July 2024- Present</p>
+                    <p><strong>Active Member</strong><br>TEC (Tarumanagara English Club)<br>August 2023 - Present</p>
+                </div>
+
+                <div class="event-experiences">
+                    <div class="section-title">Event Experiences</div>
+                    <p><strong>Funds & Public Relations</strong><br>Desa Binaan BEM FTI UNTAR<br>November 2023 - January 2024</p>
+                    <p><strong>Fundraising</strong><br>TEC 35th Anniversary<br>October 2023 - November 2023</p>
+                </div>
+
+                <div class="contact">
+                    <div class="section-title">Contact Information</div>
+                    <p class="contact-item"><i class="fas fa-envelope"></i> loveswigo@gmail.com</p>
+                    <p class="contact-item"><i class="fas fa-map-marker-alt"></i> West Jakarta, DKI Jakarta 11470</p>
+                    <p class="contact-item"><i class="fas fa-phone"></i> +62 81243306818</p>
+                </div>
             </div>
         </div>
-
-        <div class="right-column">
-            <div class="about-me">
-                <div class="section-title">A Little About Me</div>
-                <p>I am an undergraduate Informatics Engineering student at Tarumanagara University. I enjoy collaborating with people, building relationships, and sharing ideas. Balancing personal time, academics, and work is a source of pride for me.</p>
-            </div>
-
-            <div class="work-history">
-                <div class="section-title">Organizational Experience</div>
-                <p><strong>Community Service Member</strong><br>BEM FTI Tarumanagara University<br>November 2023 - Present</p>
-                <p><strong>Active Member</strong><br>TEC (Tarumanagara English Club)<br>August 2023 - Present</p>
-            </div>
-
-            <div class="event-experiences">
-                <div class="section-title">Event Experiences</div>
-                <p><strong>Funds & Public Relations</strong><br>Desa Binaan BEM FTI UNTAR<br>November 2023 - January 2024</p>
-                <p><strong>Fundraising</strong><br>TEC 35th Anniversary<br>October 2023 - November 2023</p>
-            </div>
-
-            <div class="contact">
-                <div class="section-title">Contact Information</div>
-                <p class="contact-item"><i class="fas fa-envelope"></i> loveswigo@gmail.com</p>
-                <p class="contact-item"><i class="fas fa-map-marker-alt"></i> West Jakarta, DKI Jakarta 11470</p>
-                <p class="contact-item"><i class="fas fa-phone"></i> +62 81243306818</p>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 
 </html>
